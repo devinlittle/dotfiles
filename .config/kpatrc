@@ -1,0 +1,5 @@
+[KgTheme]
+Theme=themes/greenblaze.desktop
+
+[MainWindow]
+ToolBarsMovable=Disabled

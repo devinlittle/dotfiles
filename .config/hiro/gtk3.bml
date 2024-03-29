@@ -1,0 +1,10 @@
+Geometry
+  FrameX:0
+  FrameY:0
+  FrameWidth:0
+  FrameHeight:0
+  MenuHeight:8
+  StatusHeight:8
+Theme
+  ActionIcons:true
+  WidgetColors:true
