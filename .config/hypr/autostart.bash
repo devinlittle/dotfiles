@@ -9,7 +9,10 @@ scripts = $config/scripts
 hyprpaper &
 
 # idle daemon
-hypridle & 
+hypridle &
+
+# Noties
+dunst & 
 
 # stuff
 /usr/lib/polkit-kde-authentication-agent-1 & 
