@@ -12,6 +12,7 @@ export PATH="~/.config/emacs/bin:$PATH"
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+export TERM="wezterm"
 . "$HOME/.cargo/env"
 source /usr/share/nvm/init-nvm.sh
 

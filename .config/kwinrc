@@ -6,6 +6,9 @@ Rows=1
 [Tiling]
 padding=4
 
+[Tiling][43b5e842-a3cc-59d3-ac2f-a9588d97346c]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][b546acdd-3ad6-5d7a-8243-f60819f00fa9]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -13,4 +16,4 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 Top=ShowDesktop
 
 [Xwayland]
-Scale=1.25
+Scale=1
