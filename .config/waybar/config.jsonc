@@ -7,16 +7,10 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "sway/workspaces",
-        "sway/mode",
-        "sway/scratchpad",
-        "custom/media"
-    ],
-    "modules-center": [
-        "sway/window"
+        "hyprland/workspaces"
     ],
     "modules-right": [
-        "mpd",
+        "hyprland/workspaces",
         "idle_inhibitor",
         "pulseaudio",
         "network",
@@ -26,29 +20,18 @@
         "temperature",
         "backlight",
         "keyboard-state",
-        "sway/language",
         "battery",
         "battery#bat2",
         "clock",
         "tray"
     ],
-    // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+//    Modules configuration
+    "hyprland/workspaces": {
+	    "active-only": false,
+	 "persistent_workspaces": {
+		"1": []
+	 } 
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -196,7 +179,7 @@
             "default": "🎜"
         },
         "escape": true,
-        "exec": "$HOME/.config/hypr/scripts/player.bash 2> /dev/null" // Script in resources folder
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     }
 }

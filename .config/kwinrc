@@ -3,6 +3,10 @@ Id_1=c2d0293d-f1f7-4f29-9a3a-8b76cfe873e6
 Number=1
 Rows=1
 
+[Plugins]
+magiclampEnabled=true
+squashEnabled=false
+
 [Tiling]
 padding=4
 
@@ -17,3 +21,9 @@ Top=ShowDesktop
 
 [Xwayland]
 Scale=1
+
+[org.kde.kdecoration2]
+ButtonsOnLeft=MXIAH
+ButtonsOnRight=S
+library=org.kde.kwin.aurorae
+theme=__aurorae__svg__Utterly-Round-Dark
