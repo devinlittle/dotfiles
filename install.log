@@ -1,7 +1,7 @@
-Not enough permission to place log file at /var/log/archinstall/install.log, creating it in /home/devin/dotfiles/install.log instead
+Not enough permission to place log file at /var/log/archinstall/install.log, creating it in /home/devin/install.log instead
 Hardware model detected: HP HP Spectre x360 Convertible; UEFI mode: True
 Processor model detected: Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz
-Memory statistics: 14343684 available out of 16254860 total installed
+Memory statistics: 10411064 available out of 16254728 total installed
 Could not detect virtual system: ['/usr/bin/systemd-detect-virt'] exited with abnormal exit code [1]: none
 
 System is not running in a VM: ['/usr/bin/systemd-detect-virt'] exited with abnormal exit code [1]: none
@@ -81,7 +81,7 @@ Disk states before installing: [
                 "size": "127115 MiB",
                 "tran": null,
                 "type": "part",
-                "uuid": "A4DEEE5FDEEE296E"
+                "uuid": "DCD85251D85229D2"
             },
             {
                 "children": [],
@@ -109,12 +109,12 @@ Disk states before installing: [
             },
             {
                 "children": [],
-                "fsavail": 20488114176,
+                "fsavail": 57518395392,
                 "fsroots": [
                     "."
                 ],
                 "fstype": "xfs",
-                "fsuse_percentage": "85%",
+                "fsuse_percentage": "58%",
                 "fsver": null,
                 "log_sec": 512,
                 "mountpoint": "/",
@@ -163,12 +163,12 @@ Disk states before installing: [
             },
             {
                 "children": [],
-                "fsavail": 902533120,
+                "fsavail": 948338688,
                 "fsroots": [
                     "."
                 ],
                 "fstype": "vfat",
-                "fsuse_percentage": "16%",
+                "fsuse_percentage": "12%",
                 "fsver": "FAT32",
                 "log_sec": 512,
                 "mountpoint": "/boot",
@@ -188,78 +188,191 @@ Disk states before installing: [
                 "tran": null,
                 "type": "part",
                 "uuid": "BAB0-123B"
+            }
+        ],
+        "fsavail": null,
+        "fsroots": [],
+        "fstype": null,
+        "fsuse_percentage": null,
+        "fsver": null,
+        "log_sec": 512,
+        "mountpoint": null,
+        "mountpoints": [],
+        "name": "sda",
+        "partn": null,
+        "parttype": null,
+        "partuuid": null,
+        "path": "/dev/sda",
+        "pkname": null,
+        "pttype": "gpt",
+        "ptuuid": "1216ef8c-4850-4800-9aeb-8ae03e8b69b6",
+        "rota": false,
+        "size": "488386 MiB",
+        "tran": "sata",
+        "type": "disk",
+        "uuid": null
+    },
+    {
+        "children": [],
+        "fsavail": null,
+        "fsroots": [],
+        "fstype": null,
+        "fsuse_percentage": null,
+        "fsver": null,
+        "log_sec": 512,
+        "mountpoint": null,
+        "mountpoints": [],
+        "name": "sdb",
+        "partn": null,
+        "parttype": null,
+        "partuuid": null,
+        "path": "/dev/sdb",
+        "pkname": null,
+        "pttype": null,
+        "ptuuid": null,
+        "rota": true,
+        "size": "118290 MiB",
+        "tran": "usb",
+        "type": "disk",
+        "uuid": null
+    }
+]
+Not enough permission to place log file at /var/log/archinstall/install.log, creating it in /home/devin/install.log instead
+Hardware model detected: HP HP Spectre x360 Convertible; UEFI mode: True
+Processor model detected: Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz
+Memory statistics: 9981620 available out of 16254728 total installed
+Could not detect virtual system: ['/usr/bin/systemd-detect-virt'] exited with abnormal exit code [1]: none
+
+System is not running in a VM: ['/usr/bin/systemd-detect-virt'] exited with abnormal exit code [1]: none
+
+Virtualization detected: None; is VM: False
+Graphics devices detected: dict_keys(['Intel Corporation Skylake GT2 [HD Graphics 520] (rev 07)'])
+Disk states before installing: [
+    {
+        "children": [
+            {
+                "children": [],
+                "fsavail": null,
+                "fsroots": [],
+                "fstype": "vfat",
+                "fsuse_percentage": null,
+                "fsver": "FAT32",
+                "log_sec": 512,
+                "mountpoint": null,
+                "mountpoints": [],
+                "name": "sda1",
+                "partn": 1,
+                "parttype": "c12a7328-f81f-11d2-ba4b-00a0c93ec93b",
+                "partuuid": "5d9f7a0e-fb81-4359-8d32-e3c4c78706dd",
+                "path": "/dev/sda1",
+                "pkname": "sda",
+                "pttype": "gpt",
+                "ptuuid": "1216ef8c-4850-4800-9aeb-8ae03e8b69b6",
+                "rota": false,
+                "size": "100 MiB",
+                "tran": null,
+                "type": "part",
+                "uuid": "BA4C-7D3E"
             },
             {
                 "children": [],
                 "fsavail": null,
                 "fsroots": [],
-                "fstype": "ext4",
+                "fstype": null,
                 "fsuse_percentage": null,
-                "fsver": "1.0",
+                "fsver": null,
                 "log_sec": 512,
                 "mountpoint": null,
                 "mountpoints": [],
-                "name": "sda8",
-                "partn": 8,
+                "name": "sda2",
+                "partn": 2,
+                "parttype": "e3c9e316-0b5c-4db8-817d-f92df00215ae",
+                "partuuid": "66528478-9aaa-4896-bebc-88fb63da96c8",
+                "path": "/dev/sda2",
+                "pkname": "sda",
+                "pttype": "gpt",
+                "ptuuid": "1216ef8c-4850-4800-9aeb-8ae03e8b69b6",
+                "rota": false,
+                "size": "16 MiB",
+                "tran": null,
+                "type": "part",
+                "uuid": null
+            },
+            {
+                "children": [],
+                "fsavail": null,
+                "fsroots": [],
+                "fstype": "ntfs",
+                "fsuse_percentage": null,
+                "fsver": null,
+                "log_sec": 512,
+                "mountpoint": null,
+                "mountpoints": [],
+                "name": "sda3",
+                "partn": 3,
+                "parttype": "ebd0a0a2-b9e5-4433-87c0-68b6b72699c7",
+                "partuuid": "b7830bc5-ead9-4c34-b433-6b8c709fe4ff",
+                "path": "/dev/sda3",
+                "pkname": "sda",
+                "pttype": "gpt",
+                "ptuuid": "1216ef8c-4850-4800-9aeb-8ae03e8b69b6",
+                "rota": false,
+                "size": "127115 MiB",
+                "tran": null,
+                "type": "part",
+                "uuid": "DCD85251D85229D2"
+            },
+            {
+                "children": [],
+                "fsavail": null,
+                "fsroots": [],
+                "fstype": "ntfs",
+                "fsuse_percentage": null,
+                "fsver": null,
+                "log_sec": 512,
+                "mountpoint": null,
+                "mountpoints": [],
+                "name": "sda4",
+                "partn": 4,
+                "parttype": "de94bba4-06d1-4d40-a16a-bfd50179d6ac",
+                "partuuid": "910dcc60-45ce-4f9f-be03-e5eeed9df50c",
+                "path": "/dev/sda4",
+                "pkname": "sda",
+                "pttype": "gpt",
+                "ptuuid": "1216ef8c-4850-4800-9aeb-8ae03e8b69b6",
+                "rota": false,
+                "size": "768 MiB",
+                "tran": null,
+                "type": "part",
+                "uuid": "527AE4C07AE4A249"
+            },
+            {
+                "children": [],
+                "fsavail": 57647886336,
+                "fsroots": [
+                    "."
+                ],
+                "fstype": "xfs",
+                "fsuse_percentage": "58%",
+                "fsver": null,
+                "log_sec": 512,
+                "mountpoint": "/",
+                "mountpoints": [
+                    "/"
+                ],
+                "name": "sda5",
+                "partn": 5,
                 "parttype": "0fc63daf-8483-4772-8e79-3d69d8477de4",
-                "partuuid": "dcfcf195-406d-47bc-b367-fb9e1db94edb",
-                "path": "/dev/sda8",
+                "partuuid": "afeac97b-eaea-4361-a519-dfa00c809285",
+                "path": "/dev/sda5",
                 "pkname": "sda",
                 "pttype": "gpt",
                 "ptuuid": "1216ef8c-4850-4800-9aeb-8ae03e8b69b6",
                 "rota": false,
-                "size": "130048 MiB",
+                "size": "131072 MiB",
                 "tran": null,
                 "type": "part",
-                "uuid": "0a3c286e-a145-4f4a-afdc-3fe4655445f3"
-            },
-            {
-                "children": [],
-                "fsavail": null,
-                "fsroots": [],
-                "fstype": "vfat",
-                "fsuse_percentage": null,
-                "fsver": "FAT32",
-                "log_sec": 512,
-                "mountpoint": null,
-                "mountpoints": [],
-                "name": "sda9",
-                "partn": 9,
-                "parttype": "c12a7328-f81f-11d2-ba4b-00a0c93ec93b",
-                "partuuid": "7f4db0f9-c562-944b-bed4-50aa6471c17b",
-                "path": "/dev/sda9",
-                "pkname": "sda",
-                "pttype": "gpt",
-                "ptuuid": "1216ef8c-4850-4800-9aeb-8ae03e8b69b6",
-                "rota": false,
-                "size": "512 MiB",
-                "tran": null,
-                "type": "part",
-                "uuid": "DBCD-36E0"
-            },
-            {
-                "children": [],
-                "fsavail": null,
-                "fsroots": [],
-                "fstype": "vfat",
-                "fsuse_percentage": null,
-                "fsver": "FAT32",
-                "log_sec": 512,
-                "mountpoint": null,
-                "mountpoints": [],
-                "name": "sda10",
-                "partn": 10,
-                "parttype": "c12a7328-f81f-11d2-ba4b-00a0c93ec93b",
-                "partuuid": "425e1ec8-bab0-4a19-bd5b-f48e189f32ed",
-                "path": "/dev/sda10",
-                "pkname": "sda",
-                "pttype": "gpt",
-                "ptuuid": "1216ef8c-4850-4800-9aeb-8ae03e8b69b6",
-                "rota": false,
-                "size": "1024 MiB",
-                "tran": null,
-                "type": "part",
-                "uuid": "B47D-6B04"
+                "uuid": "1502f904-ba87-481c-8d1b-404915d96c3e"
             },
             {
                 "children": [],
@@ -269,21 +382,51 @@ Disk states before installing: [
                 "fsuse_percentage": null,
                 "fsver": "1",
                 "log_sec": 512,
-                "mountpoint": null,
-                "mountpoints": [],
-                "name": "sda11",
-                "partn": 11,
+                "mountpoint": "[SWAP]",
+                "mountpoints": [
+                    "[SWAP]"
+                ],
+                "name": "sda6",
+                "partn": 6,
                 "parttype": "0657fd6d-a4ab-43c4-84e5-0933c84b4f4f",
-                "partuuid": "0cc278fc-e9b0-450c-b667-307ccc5ec977",
-                "path": "/dev/sda11",
+                "partuuid": "d482e098-5a14-405a-8f7d-65fa5e3a2e29",
+                "path": "/dev/sda6",
                 "pkname": "sda",
                 "pttype": "gpt",
                 "ptuuid": "1216ef8c-4850-4800-9aeb-8ae03e8b69b6",
                 "rota": false,
-                "size": "16384 MiB",
+                "size": "5120 MiB",
                 "tran": null,
                 "type": "part",
-                "uuid": "f2ee11c2-51bb-4316-863e-2835e95dab4a"
+                "uuid": "d15c5f6d-c197-46da-b206-cf5889b9441e"
+            },
+            {
+                "children": [],
+                "fsavail": 948338688,
+                "fsroots": [
+                    "."
+                ],
+                "fstype": "vfat",
+                "fsuse_percentage": "12%",
+                "fsver": "FAT32",
+                "log_sec": 512,
+                "mountpoint": "/boot",
+                "mountpoints": [
+                    "/boot"
+                ],
+                "name": "sda7",
+                "partn": 7,
+                "parttype": "c12a7328-f81f-11d2-ba4b-00a0c93ec93b",
+                "partuuid": "9679f11a-e3aa-464b-a974-19acdacfdc00",
+                "path": "/dev/sda7",
+                "pkname": "sda",
+                "pttype": "gpt",
+                "ptuuid": "1216ef8c-4850-4800-9aeb-8ae03e8b69b6",
+                "rota": false,
+                "size": "1024 MiB",
+                "tran": null,
+                "type": "part",
+                "uuid": "BAB0-123B"
             }
         ],
         "fsavail": null,
@@ -312,27 +455,59 @@ Disk states before installing: [
         "children": [
             {
                 "children": [],
-                "fsavail": null,
-                "fsroots": [],
-                "fstype": "exfat",
-                "fsuse_percentage": null,
-                "fsver": "1.0",
+                "fsavail": 535797760,
+                "fsroots": [
+                    "."
+                ],
+                "fstype": "vfat",
+                "fsuse_percentage": "0%",
+                "fsver": "FAT32",
                 "log_sec": 512,
-                "mountpoint": null,
-                "mountpoints": [],
+                "mountpoint": "/mnt/archinstall/boot",
+                "mountpoints": [
+                    "/mnt/archinstall/boot"
+                ],
                 "name": "sdb1",
                 "partn": 1,
-                "parttype": "0xc",
-                "partuuid": null,
+                "parttype": "c12a7328-f81f-11d2-ba4b-00a0c93ec93b",
+                "partuuid": "9b2d42cb-9f44-4044-ab8a-731d5bdca30c",
                 "path": "/dev/sdb1",
                 "pkname": "sdb",
-                "pttype": "dos",
-                "ptuuid": null,
+                "pttype": "gpt",
+                "ptuuid": "6e1e2308-a7d3-4ffa-a256-bae584e8b6bc",
                 "rota": true,
-                "size": "118289 MiB",
+                "size": "512 MiB",
                 "tran": null,
                 "type": "part",
-                "uuid": "E7E6-F83D"
+                "uuid": "BBE5-B368"
+            },
+            {
+                "children": [],
+                "fsavail": 114764537856,
+                "fsroots": [
+                    "."
+                ],
+                "fstype": "ext4",
+                "fsuse_percentage": "0%",
+                "fsver": "1.0",
+                "log_sec": 512,
+                "mountpoint": "/mnt/archinstall",
+                "mountpoints": [
+                    "/mnt/archinstall"
+                ],
+                "name": "sdb2",
+                "partn": 2,
+                "parttype": "0fc63daf-8483-4772-8e79-3d69d8477de4",
+                "partuuid": "27918379-1a17-4c6f-b75a-619f2fa3aafd",
+                "path": "/dev/sdb2",
+                "pkname": "sdb",
+                "pttype": "gpt",
+                "ptuuid": "6e1e2308-a7d3-4ffa-a256-bae584e8b6bc",
+                "rota": true,
+                "size": "117777 MiB",
+                "tran": null,
+                "type": "part",
+                "uuid": "e9fcd71c-d521-4793-8822-fa86f4f5f766"
             }
         ],
         "fsavail": null,
@@ -349,8 +524,8 @@ Disk states before installing: [
         "partuuid": null,
         "path": "/dev/sdb",
         "pkname": null,
-        "pttype": "dos",
-        "ptuuid": null,
+        "pttype": "gpt",
+        "ptuuid": "6e1e2308-a7d3-4ffa-a256-bae584e8b6bc",
         "rota": true,
         "size": "118290 MiB",
         "tran": "usb",

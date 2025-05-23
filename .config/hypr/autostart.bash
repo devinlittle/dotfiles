@@ -6,7 +6,8 @@ config = ~/.config/hypr
 scripts = $config/scripts
 
 # wallpaper
-hyprpaper &
+#hyprpaper &
+linux-wallpaperengine --screen-root eDP-1 1397593570
 
 # idle daemon
 hypridle &

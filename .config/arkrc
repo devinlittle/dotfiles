@@ -1,17 +1,328 @@
 [ExtractDialog]
 1920x1080 screen: Window-Maximized=true
-DirHistory[$e]=$HOME/Downloads/ajaja/
+DirHistory[$e]=$HOME/Videos/,$HOME/Downloads/ModsStuff/Enimatica6/,$HOME/Videos/TEST/,$HOME/Videos/TEST/uHz38/,$HOME/Downloads/,$HOME/Downloads/ModsStuff/Artifacts/,$HOME/Downloads/ModsStuff/,$HOME/Downloads/ajaja/
 
 [General]
 LockSidebar=true
 ShowSidebar=true
+Volume=1
 
-[KFileDialog Settings]
-Recent Files[$e]=file:$HOME/Downloads/testfile,file:$HOME/Downloads/testfile
-Recent URLs[$e]=file:$HOME/Downloads/ajaja/
-detailViewIconSize=16
+[Interface]
+ResolutionX=14.1732529
+ResolutionY=14.1732529
+Rulers=false
+StatusBarShowLineNumber=true
+StatusBarShowModified=true
+StatusBarShowMouse=false
+StatusBarShowPage=true
+StatusBarShowPageSize=false
+StatusBarShowPageStyle=true
+StatusBarShowWordCount=false
+StatusBarShowZoom=true
+ViewFieldShadings=true
+ViewFormattingChars=false
+ViewFrameBorders=true
+ViewSectionBounds=false
+ViewTableBorders=true
+Zoom=100
+ZoomMode=1
 
 [MainWindow]
 1920x1080 screen: Window-Maximized=true
 StatusBar=Disabled
-ToolBarsMovable=Disabled
+splitterSizes=792,135
+
+[Misc]
+Units=in
+
+[Phonon::AudioOutput]
+Ark_Volume=1
+
+[Viewer]
+StatusBar=Disabled
+
+[calligra]
+DockerPlugins=calligra_docker_defaults,calligra_docker_stencils
+DockerPluginsDisabled=
+ShapePlugins=braindump_shape_web,calligra_shape_artistictext,calligra_shape_chart,calligra_shape_formula,calligra_shape_music,calligra_shape_paths,calligra_shape_picture,calligra_shape_plugin,calligra_shape_text,calligra_shape_threed,calligra_shape_vector,calligra_shape_video
+ShapePluginsDisabled=
+TextInlinePlugins=calligra_textinlineobject_variables,kprvariables
+TextInlinePluginsDisabled=
+ToolPlugins=calligra_tool_basicflakes,calligra_tool_defaults,karbon_tools
+ToolPluginsDisabled=
+
+[file:///tmp/ark-BzzAhN/unkown  PT_x264.mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,7
+Hue=0
+IsVideo=true
+Position=431580
+Preferred Size=1876,929
+Saturation=0
+
+[file:///tmp/ark-LaWGBl/12 year old salome/12 year old salome menunoz video 1.mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,7
+Hue=0
+IsVideo=true
+Position=150
+Preferred Size=931,929
+Saturation=0
+
+[file:///tmp/ark-LjXQYn/12 year old salome/12 year old salome menunoz video3.mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,7
+Hue=0
+IsVideo=true
+Position=43400
+Preferred Size=931,929
+Saturation=0
+
+[file:///tmp/ark-MTJGvB/24 (2).mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,6
+Hue=0
+IsVideo=true
+Preferred Size=466,404
+Saturation=0
+
+[file:///tmp/ark-NWEKHY/mazi-series-001.mp4]
+Brightness=0
+Contrast=0
+Date=2024,7,6
+Hue=0
+IsVideo=true
+Position=900
+Preferred Size=466,149
+Saturation=0
+
+[file:///tmp/ark-OLpGoe/(pthc) 14 yo janina_mast_very hot hq.mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,4
+Hue=0
+IsVideo=true
+Position=650
+Preferred Size=466,404
+Saturation=0
+
+[file:///tmp/ark-Pvjbbi/video_2023-02-22_06-39-46.mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,4
+Hue=0
+IsVideo=true
+Position=1151
+Preferred Size=451,447
+Saturation=0
+
+[file:///tmp/ark-RFkaXW/video_2021-06-29_15-36-04.mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,4
+Hue=0
+IsVideo=true
+Position=1901
+Preferred Size=931,447
+Saturation=0
+
+[file:///tmp/ark-SCJnog/FANTA/!compilation.mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,7
+Hue=0
+IsVideo=true
+Preferred Size=508,404
+Saturation=0
+
+[file:///tmp/ark-TMAxOC/FANTA/video (1).mp4]
+AudioChannel=3
+Brightness=0
+Contrast=0
+Date=2024,7,7
+Hue=0
+IsVideo=true
+Preferred Size=508,404
+Saturation=0
+
+[file:///tmp/ark-XTeSOd/video_2023-02-22_06-39-46.mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,4
+Hue=0
+IsVideo=true
+Position=29149
+Preferred Size=451,404
+Saturation=0
+
+[file:///tmp/ark-cAOyaG/FANTA/2.mp4]
+AudioChannel=3
+Brightness=0
+Contrast=0
+Date=2024,7,7
+Hue=0
+IsVideo=true
+Position=4650
+Preferred Size=508,404
+Saturation=0
+
+[file:///tmp/ark-dKSVle/FANTA/video (2).mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,7
+Hue=0
+IsVideo=true
+Position=9118
+Preferred Size=522,447
+Saturation=0
+
+[file:///tmp/ark-gWzodZ/2em1.avi]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,4
+Hue=0
+IsVideo=true
+Position=12850
+Preferred Size=1876,929
+Saturation=0
+
+[file:///tmp/ark-mcWEnW/yhIU3.mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,6
+Hue=0
+IsVideo=true
+Position=4151
+Preferred Size=466,447
+Saturation=0
+
+[file:///tmp/ark-myZGvp/12 year old salome/12 year old salome menunoz video 2.mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,7
+Hue=0
+IsVideo=true
+Preferred Size=931,929
+Saturation=0
+
+[file:///tmp/ark-nDcCUb/Thrillers.mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,7
+Hue=0
+IsVideo=true
+Preferred Size=931,404
+Saturation=0
+
+[file:///tmp/ark-ngMbFR/video_2023-02-20_06-28-13.mp4]
+Brightness=0
+Contrast=0
+Date=2024,7,4
+Hue=0
+IsVideo=false
+Preferred Size=1876,929
+Saturation=0
+
+[file:///tmp/ark-oMTAzf/FANTA/IMG_4266.mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,7
+Hue=0
+IsVideo=true
+Position=3401
+Preferred Size=508,447
+Saturation=0
+
+[file:///tmp/ark-qMAbIS/FANTA/1.mp4]
+AudioChannel=3
+Brightness=0
+Contrast=0
+Date=2024,7,7
+Hue=0
+IsVideo=true
+Preferred Size=508,404
+Saturation=0
+
+[file:///tmp/ark-sAdoOG/video_2021-06-29_15-36-04.mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,4
+Hue=0
+IsVideo=true
+Position=901
+Preferred Size=466,404
+Saturation=0
+
+[file:///tmp/ark-tcYqBN/8UnJ9.mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,4
+Hue=0
+IsVideo=true
+Position=96497
+Preferred Size=931,447
+Saturation=0
+
+[file:///tmp/ark-tvHpoa/video_2@19-03-2023_02-06-30.mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2025,2,25
+Hue=0
+IsVideo=true
+Position=147383
+Preferred Size=1920,883
+Saturation=0
+
+[file:///tmp/ark-wHMlxk/849ei.mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,4
+Hue=0
+IsVideo=true
+Position=139017
+Preferred Size=451,447
+Saturation=0
+
+[file:///tmp/ark-wfbnaf/FANTA/xx(15).mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,7
+Hue=0
+IsVideo=true
+Preferred Size=508,404
+Saturation=0
+
+[file:///tmp/ark-xkVVBk/Pedo-Pthc- Seleceted - 2014- Only The Best (126).mp4]
+AudioChannel=2
+Brightness=0
+Contrast=0
+Date=2024,7,7
+Hue=0
+IsVideo=true
+Position=485410
+Preferred Size=508,447
+Saturation=0
