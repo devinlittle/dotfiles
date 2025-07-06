@@ -30,7 +30,7 @@ ZoomMode=1
 [MainWindow]
 1920x1080 screen: Window-Maximized=true
 StatusBar=Disabled
-splitterSizes=792,135
+splitterSizes=1796,123
 
 [Misc]
 Units=in
@@ -199,6 +199,15 @@ Hue=0
 IsVideo=true
 Position=12850
 Preferred Size=1876,929
+Saturation=0
+
+[file:///tmp/ark-mRhkAc/TBHPS2/natural.mp4]
+Brightness=0
+Contrast=0
+Date=2025,6,23
+Hue=0
+IsVideo=false
+Preferred Size=1920,958
 Saturation=0
 
 [file:///tmp/ark-mcWEnW/yhIU3.mp4]

@@ -13,7 +13,7 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 alias ls='eza --color=auto'
 alias grep='grep --color=auto'
 alias stardew="./.local/share/Steam/steamapps/common/Stardew\ Valley/StardewModdingAPI"
-export TERM="wezterm"
+#export TERM="wezterm"
 . "$HOME/.cargo/env"
 source /usr/share/nvm/init-nvm.sh
 

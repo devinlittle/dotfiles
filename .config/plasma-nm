@@ -1,2 +1,5 @@
 [General]
 HotspotConnectionPath=
+ManageVirtualConnections=true
+SystemConnectionsByDefault=false
+UnlockModemOnDetection=true

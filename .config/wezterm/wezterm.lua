@@ -19,7 +19,7 @@ config.window_padding = {
 --config.font_antialias = "Greyscale"
 config.enable_wayland = true
 config.hide_tab_bar_if_only_one_tab = true
-config.term = "xterm-256color"
+--config.term = "xterm-256color"
 
 config.ssh_domains = {
   {
