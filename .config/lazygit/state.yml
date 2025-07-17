@@ -1,9 +1,10 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/devin/dotfiles
+    - /home/devin/Documents/rust/monorepo
     - /home/devin/Documents/js/devinlittlenet
 startuppopupversion: 5
-lastversion: 0.52.0
+lastversion: 0.53.0
 customcommandshistory: []
 hidecommandlog: false
 ignorewhitespaceindiffview: false
