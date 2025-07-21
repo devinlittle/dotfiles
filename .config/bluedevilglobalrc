@@ -3,3 +3,6 @@ A4:02:B9:E1:CE:17_powered=true
 
 [Devices]
 connectedDevices=
+
+[General]
+bluetoothBlocked=true
