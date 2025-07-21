@@ -12,6 +12,7 @@ linux-wallpaperengine --screen-root eDP-1 1397593570 &
 
 ### idle daemon
 hypridle &
+aw-qt &
 
 ### Noties
 dunst & 

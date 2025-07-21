@@ -1,0 +1,8 @@
+[user]
+	email = pixlovesit@gmail.com
+	name = Devin Little
+	signingkey = DB94FE4BC4CC9852
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
