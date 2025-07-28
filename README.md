@@ -8,8 +8,8 @@ linux-wallpaperengine
 hypridle
 activity watch
 dunst
-polkit-kde-authentication-agent
-pinentry-gtk
+polkit-kde-agent
+NEED SOME SORT OF PINENTRY
 rofi-wayland
 gnupg
 neovim
@@ -18,7 +18,18 @@ bash
 flameshot
 pavucontrol
 
-PROB A LOT MORE BUT IM FORGETTING IT
+
+#Setup 
+* u need git and yay installed
+```bash
+cd ~ # make sure in home dir
+git clone https://github.com/devinlittle/dotfiles.git && dotfiles
+sudo pacman -S git stow hyprland waybar hypridle hyprlock hyprpaper wezterm neovim bash eza rofi-wayland dunst flameshot pavucontrol pamixer playerctl feh dolphin firefox gnupg polkit-kde-agent mpd lazygit stylua shellcheck shfmt flake8 ttf-fira-code noto-fonts rustup
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash 
+yay -S --noconfirm linux-wallpaperengine aw-qt brillo youtube-music-git
+stow --target=$HOME . # create symlinks for config files and DONE!!
+echo "make sure to install rustup and nodejs + corepack"
+```
 
 To add: PAM config, gnupg config, speaking of...
 ```
