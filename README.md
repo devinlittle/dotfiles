@@ -23,7 +23,7 @@ pavucontrol
 * u need git and yay installed
 ```bash
 cd ~ # make sure in home dir
-git clone https://github.com/devinlittle/dotfiles.git && dotfiles
+git clone https://github.com/devinlittle/dotfiles.git && cd dotfiles
 sudo pacman -S git stow hyprland waybar hypridle hyprlock hyprpaper wezterm neovim bash eza rofi-wayland dunst flameshot pavucontrol pamixer playerctl feh dolphin firefox gnupg polkit-kde-agent mpd lazygit stylua shellcheck shfmt flake8 ttf-fira-code noto-fonts rustup
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash 
 yay -S --noconfirm linux-wallpaperengine aw-qt brillo youtube-music-git
