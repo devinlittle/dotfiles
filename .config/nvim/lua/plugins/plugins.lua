@@ -162,7 +162,9 @@ return {
       ---@type lspconfig.options
       servers = {
         -- pyright will be automatically installed with mason and loaded with lspconfig
+	svelte = {},
         pyright = {},
+	rust_analyzer = { enabled = false },
       },
     },
   },
@@ -185,7 +187,9 @@ return {
       ---@type lspconfig.options
       servers = {
         -- tsserver will be automatically installed with mason and loaded with lspconfig
+	svelte = {},
         tsserver = {},
+	rust_analyzer = { enabled = false },
       },
       -- you can do any additional lsp server setup here
       -- return true if you don't want this server to be setup with lspconfig
@@ -273,14 +277,14 @@ return {
 
   -- add any tools you want to have installed below
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
         "stylua",
         "shellcheck",
         "shfmt",
         "flake8",
-        "rust-analyzer"
+--        "rust-analyzer"
       },
     },
   },
