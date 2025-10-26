@@ -17,7 +17,7 @@ export GPG_TTY=$(tty)
 ### Aliases
 alias ls='eza --color=auto'
 alias grep='grep --color=auto'
-
+alias ip="ip --color=always"
 
 ### Exports
 export PAGER="moar"
@@ -39,3 +39,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
