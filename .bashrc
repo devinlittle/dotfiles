@@ -18,6 +18,7 @@ export GPG_TTY=$(tty)
 alias ls='eza --color=auto'
 alias grep='grep --color=auto'
 alias ip="ip --color=always"
+alias z="zellij"
 
 ### Exports
 export PAGER="moor"
