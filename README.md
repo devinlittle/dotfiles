@@ -54,3 +54,12 @@ sYJ4h5E4AQ==
 =kwRL
 -----END PGP PUBLIC KEY BLOCK-----
 ```
+
+
+ADD TO `/etc/ssh/sshd_config`
+
+```bash
+AllowAgentForwarding yes
+AllowStreamLocalForwarding yes
+StreamLocalBindUnlink yes
+```

@@ -13,19 +13,30 @@ if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
 fi
 export GPG_TTY=$(tty)
 
+gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1
 
 ### Aliases
 alias ls='eza --color=auto'
 alias grep='grep --color=auto'
 alias ip="ip --color=always"
 alias z="zellij"
+alias remote-dev='ssh -t mac-mini -- "~/.cargo/bin/zellij attach -c devina"'
+alias remote-kill='ssh -O exit mac-mini'
+
+if [ ! -d "$HOME/.ssh/sockets" ]; then
+  mkdir -p "$HOME/.ssh/sockets"
+  chmod 700 "$HOME/.ssh"
+  chmod 700 "$HOME/.ssh/sockets"
+fi
 
 ### Exports
 export PAGER="moor"
+export EDITOR="nvim"
 
 ### Desktop
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
-    export MOZ_ENABLE_WAYLAND=1
+  export MOZ_ENABLE_WAYLAND=1
+  export ELECTRON_OZONE_PLATFORM_HINT="auto"
 fi
 
 ### Coding Stuff
@@ -39,7 +50,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # pnpm
 export PNPM_HOME="/home/devin/.local/share/pnpm"
 case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
+*":$PNPM_HOME:"*) ;;
+*) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
