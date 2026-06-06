@@ -19,7 +19,6 @@ alias ls='eza --color=auto'
 alias grep='grep --color=auto'
 alias ip="ip --color=always"
 
-
 ### Exports
 export PAGER="moor"
 
@@ -30,8 +29,11 @@ fi
 
 ### Coding Stuff
 source "$HOME/.cargo/env"
-source /usr/share/nvm/init-nvm.sh
-#source ~/export-esp.sh
+eval "$(fnm env)"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
 # pnpm
 export PNPM_HOME="/home/devin/.local/share/pnpm"
@@ -40,11 +42,3 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"

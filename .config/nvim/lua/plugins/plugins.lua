@@ -24,7 +24,6 @@ return {
   -- change trouble config
   {
     "folke/trouble.nvim",
-    -- opts will be merged with the parent spec
     opts = { use_diagnostic_signs = true },
   },
 
@@ -32,21 +31,22 @@ return {
   { "folke/trouble.nvim", enabled = false },
 
   {
---    "andweeb/presence.nvim",
     "IogaMaster/neocord",
     event = "VeryLazy",
     opts = {
-      editing_text        = "Editing %s",               -- Format string rendered when an editable file is loaded in the buffer (either string or function(filename: string): string)
-      file_explorer_text  = "Browsing %s",              -- Format string rendered when browsing a file explorer (either string or function(file_explorer_name: string): string)
-      git_commit_text     = "Committing changes",       -- Format string rendered when committing changes in git (either string or function(filename: string): string)
-      plugin_manager_text = "Managing plugins",         -- Format string rendered when managing plugins (either string or function(plugin_manager_name: string): string)
-      reading_text        = "Reading %s",               -- Format string rendered when a read-only or unmodifiable file is loaded in the buffer (either string or function(filename: string): string)
-      workspace_text      = "Working on %s",            -- Format string rendered when in a git repository (either string or function(project_name: string|nil, filename: string): string)
-      line_number_text    = "Line %s out of %s",        -- Format string rendered when `enable_line_number` is set to true (either string or function(line_number: number, line_count: number): string)
+      editing_text        = "Editing %s",
+      file_explorer_text  = "Browsing %s",
+      git_commit_text     = "Committing changes",
+      plugin_manager_text = "Managing plugins",
+      reading_text        = "Reading %s",
+      workspace_text      = "Working on %s",
+      line_number_text    = "Line %s out of %s",
       terminal_text       = "Using Terminal",
     }
   },
   --!!!  RUST
+  --
+  --
   {
     "Saecki/crates.nvim",
     event = { "BufRead Cargo.toml" },
@@ -56,10 +56,9 @@ return {
       },
     },
   },
-
-{
+--[[{
   "mrcjkb/rustaceanvim",
-  version = "^6", -- Recommended
+  version = "^9", -- Recommended
   ft = { "rust" },
   opts = {
     server = {
@@ -84,7 +83,7 @@ return {
           -- Add clippy lints for Rust.
           checkOnSave = true,
           procMacro = {
-            enable = true,
+            enable = false,
             ignored = {
               ["async-trait"] = { "async_trait" },
               ["napi-derive"] = { "napi" },
@@ -104,7 +103,51 @@ return {
       )
     end
   end,
+}, ]]
+
+{
+  "mrcjkb/rustaceanvim",
+  version = "^9", -- Recommended
+  ft = { "rust" },
+  lazy = false, -- rustaceanvim handles its own lazy loading via filetypes
+  config = function()
+    vim.g.rustaceanvim = {
+      server = {
+        on_attach = function(_, bufnr)
+          vim.keymap.set("n", "<leader>cR", function()
+            vim.cmd.RustLsp("codeAction")
+          end, { desc = "Code Action", buffer = bufnr })
+          vim.keymap.set("n", "<leader>dr", function()
+            vim.cmd.RustLsp("debuggables")
+          end, { desc = "Rust Debuggables", buffer = bufnr })
+        end,
+        default_settings = {
+          -- rust-analyzer language server configuration
+          ["rust-analyzer"] = {
+            cargo = {
+              allFeatures = true,
+              loadOutDirsFromCheck = true,
+              buildScripts = {
+                enable = true,
+              },
+            },
+            check = {
+              command = "clippy",
+            },
+            procMacro = {
+              enable = true, 
+              ignored = {
+                ["napi-derive"] = { "napi" },
+                ["async-recursion"] = { "async_recursion" },
+              },
+            },
+          },
+        },
+      },
+    }
+  end,
 },
+ 
  {
     "j-hui/fidget.nvim",
     opts = {
@@ -172,16 +215,6 @@ return {
   -- add tsserver and setup with typescript.nvim instead of lspconfig
   {
     "neovim/nvim-lspconfig",
-    dependencies = {
-      "jose-elias-alvarez/typescript.nvim",
-      init = function()
-        require("lazyvim.util").lsp.on_attach(function(_, buffer)
-          -- stylua: ignore
-          vim.keymap.set( "n", "<leader>co", "TypescriptOrganizeImports", { buffer = buffer, desc = "Organize Imports" })
-          vim.keymap.set("n", "<leader>cR", "TypescriptRenameFile", { desc = "Rename File", buffer = buffer })
-        end)
-      end,
-    },
     ---@class PluginLspOpts
     opts = {
       ---@type lspconfig.options
@@ -195,11 +228,11 @@ return {
       -- return true if you don't want this server to be setup with lspconfig
       ---@type table<string, fun(server:string, opts:_.lspconfig.options):boolean?>
       setup = {
-        -- example to setup with typescript.nvim
+    --[[    -- example to setup with typescript.nvim
         tsserver = function(_, opts)
           require("typescript").setup({ server = opts })
           return true
-        end,
+        end,]]
         -- Specify * to use this function as a fallback for any server
         -- ["*"] = function(server, opts) end,
       },
