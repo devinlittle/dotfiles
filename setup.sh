@@ -10,7 +10,7 @@ sudo pacman -S --noconfirm \
   zstd 7zip ncdu btop tree flatpak \
   neovim vim stylua shellcheck shfmt flake8 ttf-fira-code noto-fonts \
   just tree-sitter tree-sitter-cli \
-  bun fnm rustup protoc
+  bun fnm rustup protobuf
 
 rustup default stable
 
