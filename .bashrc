@@ -20,6 +20,7 @@ alias ls='eza --color=auto'
 alias grep='grep --color=auto'
 alias ip="ip --color=always"
 alias z="zellij"
+alias npm="bun"
 alias remote-dev='ssh -t mac-mini -- "~/.cargo/bin/zellij attach -c devina"'
 alias remote-kill='ssh -O exit mac-mini'
 
@@ -41,7 +42,13 @@ fi
 
 ### Coding Stuff
 source "$HOME/.cargo/env"
-eval "$(fnm env)"
+
+# fnm
+FNM_PATH="/home/devin/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "$(fnm env --shell bash)"
+fi
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
