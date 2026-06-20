@@ -165,6 +165,7 @@ keybinds clear-defaults=true {
             }
             SwitchToMode "Normal"
         }
+        bind "Alt Shift x" { CloseTab; SwitchToMode "Normal"; }
         bind "Alt p" { TogglePaneInGroup; }
         bind "Alt Shift p" { ToggleGroupMarking; }
         bind "Ctrl q" { Quit; }
