@@ -33,6 +33,7 @@ fi
 ### Exports
 export PAGER="moor"
 export EDITOR="nvim"
+export QML_IMPORT_PATH="/usr/lib/qt6/qml:/home/devin/Projects/devinlittle-net/target/cxxqt/qml_modules"
 
 ### Desktop
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
