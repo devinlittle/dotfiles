@@ -14,6 +14,7 @@ fi
 export GPG_TTY=$(tty)
 
 gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1
+alias gpgfix="gpg-connect-agent updatestartuptty /bye"
 
 ### Aliases
 alias ls='eza --color=auto'
@@ -31,9 +32,12 @@ if [ ! -d "$HOME/.ssh/sockets" ]; then
 fi
 
 ### Exports
-export PAGER="moor"
+export PAGER="less"
 export EDITOR="nvim"
 export QML_IMPORT_PATH="/usr/lib/qt6/qml:/home/devin/Projects/devinlittle-net/target/cxxqt/qml_modules"
+export PATH="$HOME/.local/ccache/bin:$PATH"
+export PATH="/home/devin/bin:$PATH"
+export DOCKER_HOST=unix:///run/user/1000/docker.sock
 
 ### Desktop
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
@@ -62,3 +66,10 @@ case ":$PATH:" in
 *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# fnm
+FNM_PATH="/home/devin/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "$(fnm env --shell bash)"
+fi
