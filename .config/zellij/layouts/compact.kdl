@@ -1,6 +1,48 @@
 layout {
+
+	swap_floating_layout name="staggered" {
+	    floating_panes
+	}
+
+	swap_floating_layout name="enlarged" {
+	    floating_panes max_panes=10 {
+		pane { x "5%"; y 1; width "90%"; height "90%"; }
+		pane { x "5%"; y 2; width "90%"; height "90%"; }
+		pane { x "5%"; y 3; width "90%"; height "90%"; }
+		pane { x "5%"; y 4; width "90%"; height "90%"; }
+		pane { x "5%"; y 5; width "90%"; height "90%"; }
+		pane { x "5%"; y 6; width "90%"; height "90%"; }
+		pane { x "5%"; y 7; width "90%"; height "90%"; }
+		pane { x "5%"; y 8; width "90%"; height "90%"; }
+		pane { x "5%"; y 9; width "90%"; height "90%"; }
+		pane { x 10; y 10; width "90%"; height "90%"; }
+	    }
+	}
+
+	swap_floating_layout name="spread" {
+	    floating_panes max_panes=1 {
+		pane {y "50%"; x "50%"; }
+	    }
+	    floating_panes max_panes=2 {
+		pane { x "1%"; y "25%"; width "45%"; }
+		pane { x "50%"; y "25%"; width "45%"; }
+	    }
+	    floating_panes max_panes=3 {
+		pane { y "55%"; width "45%"; height "45%"; }
+		pane { x "1%"; y "1%"; width "45%"; }
+		pane { x "50%"; y "1%"; width "45%"; }
+	    }
+	    floating_panes max_panes=4 {
+		pane { x "1%"; y "55%"; width "45%"; height "45%"; }
+		pane { x "50%"; y "55%"; width "45%"; height "45%"; }
+		pane { x "1%"; y "1%"; width "45%"; height "45%"; }
+		pane { x "50%"; y "1%"; width "45%"; height "45%"; }
+	    }
+	}
+
     default_tab_template {
-        children
+	children
+
         pane size=1 borderless=true {
             plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
                 format_left  "{mode}#[fg=#181825,bg=#89B4FA,bold] {session} #[fg=#89B4FA,bg=#181825] {tabs}"
@@ -29,7 +71,7 @@ layout {
                 tab_active_fullscreen   "#[fg=#181825,bg=#cdd6f4,bold] #[fg=#181825,bg=#cdd6f4,bold]{index}  {name} [] #[fg=#cdd6f4,bg=#181825]"
                 tab_active_sync         "#[fg=#181825,bg=#cdd6f4,bold] #[fg=#181825,bg=#cdd6f4,bold]{index}  {name} <> #[fg=#cdd6f4,bg=#181825]"
 
-                hide_frame_for_single_pane "true"
+                hide_frame_for_single_pane "false"
                 border_enabled  "false"
 
                 datetime        "#[fg=#cdd6f4]{format}"
@@ -45,6 +87,7 @@ layout {
         }
     }
 }
+
 
 ////////layout {
 ////////    default_tab_template {
